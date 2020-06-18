@@ -9,7 +9,7 @@ function show() {
         <svg id="chart" width="500" viewBox="0 0 80 60">
             ${svgInnerHtml}
         </svg><br/>
-        Valgt stolpe: <i>${chosenBar>0&&numbers.length>0?chosenBar:'Ingen'}</i>
+        Valgt stolpe: <i>${(chosenBar>0&&numbers.length>0)?chosenBar:'Ingen'}</i>
         <br />
         Verdi:
         <input value="${inputValue>0&&inputValue<11?inputValue:''}" type="number" min="1" max="10" oninput="inputValue = this.value" />
